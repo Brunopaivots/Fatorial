@@ -1,0 +1,30 @@
+public static void main(String[] args) {
+
+		// Fatorial
+		Scanner sc = new Scanner(System.in);
+
+		int fatorial = sc.nextInt();
+		int nInicial = fatorial;
+		int nCalculo = 0;
+		int resul = 0;
+
+		System.out.print(fatorial + "!=");
+
+		do {
+			fatorial = fatorial - 1;
+			System.out.print(fatorial + "x ");
+		} while (fatorial != 2);
+
+		System.out.print(1 + "=");
+
+		nCalculo = nInicial - 1;
+		resul = nInicial * nCalculo;
+		do {
+			nInicial -= 1;
+			nCalculo -= 1;
+			resul = resul * nCalculo;
+		} while (nInicial != 2);
+
+		System.out.print(" " + resul);
+		sc.close();
+	}
