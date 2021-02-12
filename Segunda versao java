@@ -1,0 +1,27 @@
+public static void main(String[] args) {
+
+		Scanner sc = new Scanner (System.in);
+		
+		int fatorial = sc.nextInt();
+		int nInicial = fatorial - 1;
+		int result = fatorial;
+		System.out.print(fatorial + "!= ");
+		
+		do {
+			fatorial -= 1;
+			if (fatorial != 1 ) {
+			System.out.print(fatorial + "x ");
+			}
+			else if ( fatorial == 1) {
+				System.out.print(fatorial + " =");
+			}
+		}while (fatorial != 1);
+		
+		do {
+			result = result * nInicial;
+			nInicial -= 1;
+		}while ( nInicial != 1);
+	
+		System.out.print(result);
+		sc.close();
+	}
